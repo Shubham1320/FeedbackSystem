@@ -1,0 +1,80 @@
+
+
+body {
+  color:grey;
+
+}
+
+.login-box {
+  text-align: center;
+  padding: 60px; 
+  width: 430px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 14px 0 grey;
+}
+
+.logo {
+  height: 70px;
+  margin-bottom: 30px;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+.btn {
+  width: 100%;
+  font-size: 16px;
+}
+.registerbtn{
+  margin: 10px;
+  width:85px;
+  float:right;
+  padding: 9px;
+  border: none;
+  border-radius:3px;
+  background-color: grey;
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.registerbtn1{
+  margin: 20px;
+}
+.flip-card{
+  margin-top: 50px;
+  margin-left: 500px;
+  text-align: center;
+  padding: 60px; 
+  perspective: 10000px;
+
+}
+.flip-card-inner{
+  position: relative;
+  width: 430px;
+  height: 500px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 14px 0 grey;
+}
+/*.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 430px;
+  height: 500px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
